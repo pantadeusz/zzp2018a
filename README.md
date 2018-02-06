@@ -5,7 +5,7 @@ This is the student project. It is created for training cooperation in project t
 ## Downloading
 
 ```bash
-
+git clone https://github.com/pantadeusz/zzp2018a
 ```
 
 ## Compilation
