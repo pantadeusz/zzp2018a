@@ -13,9 +13,9 @@ class Game {
 protected:
 
 // std::chrono::high_resolution_clock::now()
-    //std::chrono::time_point<std::chrono::high_resolution_clock,duration_t> prevTime;
-	//std::chrono::steady_clock::time_point prevTime;
-	std::chrono::high_resolution_clock::time_point prevTime;
+    //std::chrono::time_point<std::chrono::high_resolution_clock,duration_t> prev_time;
+	//std::chrono::steady_clock::time_point prev_time;
+	std::chrono::high_resolution_clock::time_point prev_time;
 
 
 	std::shared_ptr<SDL_Window> window;

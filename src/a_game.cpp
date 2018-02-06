@@ -48,7 +48,7 @@ void Game::init()
 // start game. This initializes timer!
 void Game::start()
 {
-	prevTime = std::chrono::high_resolution_clock::now(); //std::chrono::steady_clock::now(); // w sekundach
+	prev_time = std::chrono::high_resolution_clock::now(); //std::chrono::steady_clock::now(); // w sekundach
 }
 
 // get inputs from users
@@ -94,7 +94,7 @@ void Game::l_draw()
 // wait for next frame
 void Game::l_sync()
 {
-	std::this_thread::sleep_until(prevTime + std::chrono::duration<double>(dt));
-	prevTime = std::chrono::high_resolution_clock::now(); //prevTime + std::chrono::duration<double>(dt);
+	std::this_thread::sleep_until(prev_time + std::chrono::duration<double>(dt));
+	prev_time = std::chrono::high_resolution_clock::now(); //prev_time + std::chrono::duration<double>(dt);
 }
 }
